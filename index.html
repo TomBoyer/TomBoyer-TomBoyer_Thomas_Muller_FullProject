@@ -11,7 +11,10 @@
 
     <script src="https://kit.fontawesome.com/efd066520c.js" crossorigin="anonymous"></script>
 
+    <link rel="shortcut icon" href="./" type="image/x-icon">
+
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style-dark-mode.css">
 
     <title>Vitrine Thomas</title>
 </head>
@@ -21,8 +24,10 @@
     <header>
         <nav>
 
-            <div class="logo">
-                <i class="fas fa-theater-masks"></i> 
+            <div class="logo-container">
+                <!-- <i class="fas fa-theater-masks"></i>  -->
+
+                <img classe='logo' src="./img/TM_2_light.svg" alt="Logo Thomas Muller">
             </div>
 
             <div class="toggle">
@@ -33,13 +38,49 @@
             <ul class="menu">
                 <li><a href="#">Accueil</a></li>
                 <li><a href="#">Contact</a></li>
-                <li><a href="#">Réseaux</a></li>
+                <li><a href="#footer-title">Réseaux</a></li>
             </ul>
         </nav>
     </header>
 
+    <Footer>
+        <div class="footer-title" id="footer-title">
+            <h3>Me retrouver sur les réseaux</h3>
+        </div>
+
+        <div class="logo-container">
+
+            <ul class="social-icons">
+
+                <li>
+                    <a href="#">
+                        <ion-icon name="logo-facebook"></ion-icon>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <ion-icon name="call-outline"></ion-icon>
+                    </a>
+                </li>
+                <li>
+                    <a href="mailto:thomas.muller@example.com">
+                        <ion-icon name="mail-outline"></ion-icon>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <ion-icon name="logo-instagram"></ion-icon>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+    </Footer>
+
 
     <script src="./script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 </body>
 
