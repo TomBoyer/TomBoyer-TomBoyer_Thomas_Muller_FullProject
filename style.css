@@ -116,7 +116,7 @@ nav .logo-container {
 a {
     color: var(--color-white);
     font-family: var(--font1);
-    font-size: x-large;
+    font-size: 2rem;
     text-decoration: none;
 }
 
@@ -228,6 +228,7 @@ section h3 {
     align-items: center;
 
     height: 100%;
+    
 }
 
 .card__img {
@@ -238,6 +239,8 @@ section h3 {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
 .card__img img {
@@ -257,6 +260,8 @@ section h3 {
     padding: 1rem;
 
     border-radius: 0 15px 0 15px;
+
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
 @media screen and (max-width : 991px) {
