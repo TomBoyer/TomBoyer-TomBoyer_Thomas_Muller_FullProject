@@ -23,11 +23,12 @@
 
     <header>
         <nav>
-
             <div class="logo-container">
                 <!-- <i class="fas fa-theater-masks"></i>  -->
 
-                <img classe='logo' src="./img/TM_2_light.svg" alt="Logo Thomas Muller">
+                <a href="./index.html">
+                    <img classe='logo' src="./img/TM_2_light.svg" alt="Logo Thomas Muller">
+                </a>
             </div>
 
             <div class="toggle">
@@ -36,16 +37,81 @@
             </div>
 
             <ul class="menu">
-                <li><a href="#">Accueil</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#footer-title">Réseaux</a></li>
+                <li class="menu__list">
+                    <a href="./index.html">Accueil</a>
+                </li>
+                <li class="menu__list">
+                    <a href="./contact_form.html">Contact</a>
+                </li>
+                <li class="menu__list">
+                    <a href="#footer-title">Réseaux</a>
+                </li>
             </ul>
         </nav>
     </header>
 
+    <main>
+
+
+        <section class="one">
+
+            <span class="line"></span>
+            <h3>Qui ?</h3>
+            <div class="card">
+                <div class="card__img">
+                    <img src="https://picsum.photos/500/500" alt="image">
+                </div>
+                <div class="card__txt">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus maxime a veritatis ex
+                        voluptate natus, nemo facilis perspiciatis minima provident ullam quo ipsam sint earum mollitia
+                        quam architecto laborum? Placeat, alias? Molestiae possimus eos magni est expedita cupiditate.
+                        Doloribus minima ipsum recusandae tempore ipsa eius, doloremque quo blanditiis nulla mollitia!
+                    </p>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="two">
+            <span class="line__reverse"></span>
+            <h3>Quoi ?</h3>
+            <div class="card card__reverse">
+
+                <div class="card__txt">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus maxime a veritatis ex
+                        voluptate natus, nemo facilis perspiciatis minima provident ullam quo ipsam sint earum mollitia
+                        quam architecto laborum? Placeat, alias? Molestiae possimus eos magni est expedita cupiditate.
+                        Doloribus minima ipsum recusandae tempore ipsa eius, doloremque quo blanditiis nulla mollitia!
+                    </p>
+                </div>
+                <div class="card__img">
+                    <img src="https://picsum.photos/500/500" alt="image">
+                </div>
+            </div>
+        </section>
+
+        <section class="three">
+            <span class="line"></span>
+            <h3>Où ?</h3>
+            <div class="card">
+                <div class="card__img">
+                    <img src="https://picsum.photos/500/500" alt="image">
+                </div>
+                <div class="card__txt">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus maxime a veritatis ex
+                        voluptate natus, nemo facilis perspiciatis minima provident ullam quo ipsam sint earum mollitia
+                        quam architecto laborum? Placeat, alias? Molestiae possimus eos magni est expedita cupiditate.
+                        Doloribus minima ipsum recusandae tempore ipsa eius, doloremque quo blanditiis nulla mollitia!
+                    </p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
     <Footer>
         <div class="footer-title" id="footer-title">
-            <h3>Me retrouver sur les réseaux</h3>
+            <h2>Me retrouver sur les réseaux</h2>
         </div>
 
         <div class="logo-container">
@@ -78,9 +144,18 @@
     </Footer>
 
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"
+        integrity="sha512-Mf/xUqfWvDIr+1B6zfnIDIiG7XHzyP/guXUWgV6PgaQoIFeXkJQR5XWh9fqAiCiRCpemabt3naV4jhDWVnuYDQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    </script>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js">
+
+    </script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js">
+
+    </script>
     <script src="./script.js"></script>
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 </body>
 
