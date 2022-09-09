@@ -74,3 +74,19 @@ const darkMode = document.getElementById("dark-mode");
 darkMode.addEventListener("change", () => {
   document.body.classList.toggle("dark");
 });
+
+
+//form contact 
+
+// document.querySelector('button').addEventListener('click', (e) => {
+//   e.preventDefault();
+//   const contactForm = document.getElementById('#form');
+//   // the gold part 🔥
+//   let data = new FormData(contactForm);  
+//   fetch("url", { method: "POST", body: data });
+//   // inform the user that the form was submitted
+//   alert('Merci pour votre message !');
+//   // clear the inputs
+//   contactForm.reset()
+//   window.open('./index.html');
+// })

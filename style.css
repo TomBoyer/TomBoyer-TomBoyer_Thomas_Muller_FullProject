@@ -300,6 +300,83 @@ section h3 {
     }
 }
 
+/* form contact */
+.form__contact{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+form {
+    margin: 2rem 0;
+    width: 100%;
+    height: auto;
+    padding-top: 90px;
+    box-sizing: border-box;
+    max-width: 600px;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+form .input_group {
+    width: 90%;
+    margin: 0 auto 1.2rem;
+    overflow: hidden;
+}
+
+form label {
+    display: block;
+    text-transform: capitalize;
+    /* font-weight: 600; */
+    color: var(--dark);
+    margin-bottom: .5rem;
+
+    font: var(--font3);
+    font-size: 2rem;
+}
+
+form input,
+form textarea {
+    width: 90%;
+    padding: .5rem 1rem;
+
+    font-size: 1.3rem;
+}
+
+form input:focus,
+form textarea:focus {
+    outline: none;
+}
+
+form button {
+    display: block;
+    width: 50%;
+    background: var(--color-1-clr);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: .8rem 0;
+    font-size: 1.2rem;
+    color: var(--color-white);
+    margin: 0 auto;
+
+    /* border: solid 3px var(--color-3); */
+    border-radius: 0 15px 0 15px;
+}
+
+form button:hover {
+    transform: scale(.99);
+    background:var(--color-1);
+    transition: background var(--duration1) ease-in-out;
+}
+
+form a {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 10%;
+}
+/* form contact */
+
 /* section */
 /* main */
 

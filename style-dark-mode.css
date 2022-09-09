@@ -5,6 +5,10 @@
     top: 2rem;
 } */
 
+body {
+    transition: .5s ease-in-out;
+}
+
 .checkbox {
     display: none;
 }
@@ -70,6 +74,17 @@
 
 .dark .card {
     color: var(--color-white);
+}
+
+/* style de la page dark contact form */
+
+.dark label{
+    color: var(--color-white);
+}
+
+.dark input, .dark textarea{
+    color: var(--color-white);
+    background:var(--dark);
 }
 
 /* DarkMode */
