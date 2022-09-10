@@ -51,6 +51,10 @@ body {
 
 /* style de la page dark */
 
+.dark .title {
+    color: var(--color-white);
+}
+
 .dark {
     background: var(--dark);
 }
@@ -78,13 +82,30 @@ body {
 
 /* style de la page dark contact form */
 
-.dark label{
+.dark label {
     color: var(--color-white);
 }
 
-.dark input, .dark textarea{
+.dark input,
+.dark textarea {
     color: var(--color-white);
-    background:var(--dark);
+    background: var(--dark);
+
+    border-radius: 15px 0 15px 0;
+    transition: border-radius .3s ease-in;
+}
+
+.dark form button {
+    border-radius: 15px 0 15px 0;
+    transition: border-radius .3s ease-in;
+
+    background: var(--color-1-clr);
+}
+
+.dark form button:hover{
+    border: 1px solid var(--color-white);
+    background: var(--color-1);
+    transition: var(--duration1) ease-in-out;
 }
 
 /* DarkMode */

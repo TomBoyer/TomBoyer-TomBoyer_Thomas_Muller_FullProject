@@ -26,6 +26,7 @@ toogle.addEventListener("click", function () {
 
 //menu desktop
 
+const titleSpans = document.querySelectorAll("h1 span");
 const nav = document.querySelectorAll(".menu__list");
 const h3 = document.querySelectorAll("h3");
 const cardImg = document.querySelectorAll(".card__img");
@@ -35,6 +36,12 @@ const lineReverse = document.querySelectorAll(".line__reverse");
 
 window.addEventListener("load", function () {
   timeLine
+    .staggerFrom(
+      titleSpans,
+      0.5,
+      { top: -50, opacity: 0, ease: "power2.out" },
+      0.1
+    )
     .staggerFrom(nav, 1, { left: -60, opacity: 0, ease: "power2.out" }, 0.3)
     .staggerFrom(
       h3,
@@ -75,18 +82,29 @@ darkMode.addEventListener("change", () => {
   document.body.classList.toggle("dark");
 });
 
+// //form contact
 
-//form contact 
-
-// document.querySelector('button').addEventListener('click', (e) => {
+// document.querySelector("button").addEventListener("click", (e) => {
 //   e.preventDefault();
-//   const contactForm = document.getElementById('#form');
-//   // the gold part 🔥
-//   let data = new FormData(contactForm);  
-//   fetch("url", { method: "POST", body: data });
-//   // inform the user that the form was submitted
-//   alert('Merci pour votre message !');
-//   // clear the inputs
-//   contactForm.reset()
-//   window.open('./index.html');
-// })
+//   const contactForm = document.querySelector("#form");
+//   const name = document.querySelector('[name="name"]');
+//   const email = document.querySelector('[name="email"]');
+//   const message = document.querySelector('[name="content"]');
+//   // validation before sending the data
+//   if (
+//     name.value.length === 0 ||
+//     email.value.length === 0 ||
+//     message.value.length === 0
+//   ) {
+//     alert("merci de compléter les champs");
+//   } else {
+//     let data = new FormData(contactForm);
+//     fetch("https://formsubmit.crazysmyley@gmail.com", {
+//       method: "POST",
+//       body: data,
+//     });
+//     alert("Merci, votre message a bien été envoyé");
+//     contactForm.reset();
+//     window.open("./index.html");
+//   }
+// });

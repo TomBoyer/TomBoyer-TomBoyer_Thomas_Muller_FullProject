@@ -80,6 +80,8 @@ nav {
     align-items: center;
     justify-content: space-between;
 
+    margin-bottom: 1rem;
+
     /* box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px; */
 }
 
@@ -122,6 +124,25 @@ a {
     font-family: var(--font1);
     font-size: 2rem;
     text-decoration: none;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-transform: uppercase;
+
+    color: var(--dark);
+
+    font-size: 1.1rem;
+    font-family: var(--font1);
+
+    margin-top: 2rem;
+}
+
+.title h1 span {
+    position: relative;
 }
 
 @media screen and (max-width : 991px) {
@@ -213,6 +234,8 @@ section .line {
     height: 4px;
     width: 100%;
 
+    margin-top: 5em;
+
     /* transform-origin: left; */
 }
 
@@ -228,7 +251,7 @@ section .line__reverse {
 
 section h3 {
     text-align: center;
-    margin-bottom: 2rem;
+    margin: 2rem 0;
     padding: .5rem;
 
     font: var(--font2);
@@ -301,10 +324,10 @@ section h3 {
 }
 
 /* form contact */
-.form__contact{
-    display:flex;
-    justify-content:center;
-    align-items:center;
+.form__contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 form {
@@ -340,6 +363,9 @@ form textarea {
     padding: .5rem 1rem;
 
     font-size: 1.3rem;
+
+    border-radius: 0 15px 0 15px;
+    transition: border-radius .3s ease-in;
 }
 
 form input:focus,
@@ -349,24 +375,31 @@ form textarea:focus {
 
 form button {
     display: block;
+
     width: 50%;
-    background: var(--color-1-clr);
+
+    background: var(--color-1);
+
     border: none;
     outline: none;
+
     cursor: pointer;
+
     padding: .8rem 0;
-    font-size: 1.2rem;
-    color: var(--color-white);
     margin: 0 auto;
 
-    /* border: solid 3px var(--color-3); */
+    font-size: 1.2rem;
+    color: var(--color-white);
+
     border-radius: 0 15px 0 15px;
+    transition: border-radius .3s ease-in;
 }
 
 form button:hover {
     transform: scale(.99);
-    background:var(--color-1);
-    transition: background var(--duration1) ease-in-out;
+    border: 1px solid var(--color-1);
+    background: var(--color-1-clr);
+    transition: var(--duration1) ease-in-out;
 }
 
 form a {
@@ -375,6 +408,7 @@ form a {
     left: 50%;
     top: 10%;
 }
+
 /* form contact */
 
 /* section */
