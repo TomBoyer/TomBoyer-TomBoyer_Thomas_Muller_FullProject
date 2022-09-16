@@ -5,11 +5,23 @@
     top: 2rem;
 } */
 
+
+[data-theme="dark"] {
+    --bg: #232130;
+    --card-bg: #3c3650;
+    --title-color: #89aeff;
+    --subtitle-color: #89aeff;
+    --text-color: #68608b;
+    --input-back: #161616;
+    --input-color: #294797;
+}
+
+
 body {
     transition: .5s ease-in-out;
 }
 
-.checkbox {
+/* .checkbox {
     display: none;
 }
 
@@ -47,7 +59,63 @@ body {
 
 .fa-moon {
     color: var(--dark);
+} */
+
+.theme-switcher {
+    width: 50px;
+    height: 20px;
+    position: relative;
+    cursor: pointer;
+    margin: 0 auto;
 }
+
+.background {
+    width: 50px;
+    height: 20px;
+    background-color: var(--input-back);
+    border-radius: 30px;
+}
+
+.switch {
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    height: 30px;
+    width: 30px;
+    background-color: var(--input-color);
+    position: absolute;
+    top: -5px;
+    left: 0px;
+    border-radius: 50%;
+    transition: all 0.2s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sun {
+    opacity: 1;
+}
+
+.moon {
+    opacity: 0;
+}
+
+input {
+    display: none;
+}
+
+
+input:checked+.switch {
+    left: 20px;
+}
+
+input:checked+.switch .sun {
+    opacity: 0;
+}
+
+input:checked+.switch .moon {
+    opacity: 1;
+}
+
 
 /* style de la page dark */
 
@@ -102,7 +170,7 @@ body {
     background: var(--color-1-clr);
 }
 
-.dark form button:hover{
+.dark form button:hover {
     border: 1px solid var(--color-white);
     background: var(--color-1);
     transition: var(--duration1) ease-in-out;

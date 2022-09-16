@@ -26,6 +26,7 @@ toogle.addEventListener("click", function () {
 
 //menu desktop
 
+// const logo = document.querySelector("a .logo");
 const titleSpans = document.querySelectorAll("h1 span");
 const nav = document.querySelectorAll(".menu__list");
 const h3 = document.querySelectorAll("h3");
@@ -36,9 +37,17 @@ const lineReverse = document.querySelectorAll(".line__reverse");
 
 window.addEventListener("load", function () {
   timeLine
+    // .from(
+    //   logo,
+    //   1,
+    //   {
+    //     top: -50, opacity: 0, ease: "power2.out"
+    //   },
+    //   "-=1"
+    // )
     .staggerFrom(
       titleSpans,
-      0.5,
+      0.2,
       { top: -50, opacity: 0, ease: "power2.out" },
       0.1
     )
@@ -76,11 +85,42 @@ window.addEventListener("load", function () {
 
 //darkmode
 
-const darkMode = document.getElementById("dark-mode");
+// https://codeorum.com/tutorials/dark-mode-with-css-variables-and-vanilla-js
 
-darkMode.addEventListener("change", () => {
-  document.body.classList.toggle("dark");
-});
+// checkbox input value
+let themeSwitcher = document.querySelector('.theme-switcher input');
+// get current theme from localStorage
+let currentTheme = localStorage.getItem('theme');
+
+// check what is current theme right now and activate it
+if (currentTheme) {
+    document.documentElement.setAttribute('data-theme', currentTheme);
+    if (currentTheme === 'dark') {
+        themeSwitcher.checked = true;
+    }
+}
+
+// switch between themes
+function switchTheme(e) {
+    if (e.target.checked) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+        localStorage.setItem('theme', 'dark');
+    }
+    else {        
+        document.documentElement.setAttribute('data-theme', 'light');
+        localStorage.setItem('theme', 'light');
+    }    
+}
+
+// event listener on checkbox change
+themeSwitcher.addEventListener('change', switchTheme, false);
+
+
+// const darkModeToggle = document.getElementById("dark-mode");
+
+// darkModeToggle.addEventListener("change", () => {
+//   document.body.classList.toggle("dark");
+// });
 
 // //form contact
 
