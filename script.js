@@ -93,32 +93,33 @@ darkModeToggle.addEventListener("change", () => {
 
 // //form contact
 
-document.querySelector("button").addEventListener("click", (e) => {
-  e.preventDefault();
-  const contactForm = document.querySelector("#form");
-  const name = document.querySelector('[name="name"]');
-  const email = document.querySelector('[name="email"]');
-  const message = document.querySelector('[name="content"]');
-  // validation before sending the data
-  if (
-    name.value.length === 0 ||
-    email.value.length === 0 ||
-    message.value.length === 0
-  ) {
-    alert("merci de compléter les champs");
-  } else {
-    let data = new FormData(contactForm);
-    fetch("https://formsubmit.crazysmyley@gmail.com", {
-      method: "POST",
-      body: data,
-    });
-    alert("Merci, votre message a bien été envoyé");
-    contactForm.reset();
-    // window.open("./index.html");
-  }
-});
+// document.querySelector("button").addEventListener("click", (e) => {
+//   e.preventDefault();
+//   const contactForm = document.querySelector("#form");
+//   const name = document.querySelector('[name="name"]');
+//   const email = document.querySelector('[name="email"]');
+//   const message = document.querySelector('[name="content"]');
+//   // validation before sending the data
+//   if (
+//     name.value.length === 0 ||
+//     email.value.length === 0 ||
+//     message.value.length === 0
+//   ) {
+//     alert("merci de compléter les champs");
+//   } else {
+//     let data = new FormData(contactForm);
+//     fetch("https://formsubmit.e7df9a104f66daa1b5df130fe0554508", {
+//       method: "POST",
+//       body: data,
+//     });
+//     alert("Merci, votre message a bien été envoyé");
+//     contactForm.reset();
+//     // window.open("./index.html");
+//   }
+// });
 
 // btn back top
+
 let btnTop = document.getElementById("btn_top")
 
 // show btn si le user scroll down 20px
