@@ -117,3 +117,23 @@ document.querySelector("button").addEventListener("click", (e) => {
     window.open("./index.html");
   }
 });
+
+// btn back top
+let btnTop = document.getElementById("btn_top")
+
+// show btn si le user scroll down 20px
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    btnTop.style.display = "block";
+  } else {
+    btnTop.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}

@@ -102,6 +102,19 @@ input:checked+.switch .moon {
 
 /* style de la page dark */
 
+.dark #btn_top {
+    border-radius: 15px 0 15px 0;
+    transition: border-radius .3s ease-in;
+    background: var(--color-1-clr);
+}
+
+#btn_top:hover{
+    background: var(--color-1);
+    border: 1px solid var(--color-white);
+    background: var(--color-1);
+    transition: var(--duration1) ease-in-out;
+}
+
 .dark .title {
     color: var(--color-white);
 }
