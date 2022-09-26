@@ -1,27 +1,10 @@
 /* DarkMode */
-/* .toggle__mode {
-    position: absolute;
-    right: 2rem;
-    top: 2rem;
-} */
-
-
-[data-theme="dark"] {
-    --bg: #232130;
-    --card-bg: #3c3650;
-    --title-color: #89aeff;
-    --subtitle-color: #89aeff;
-    --text-color: #68608b;
-    --input-back: #161616;
-    --input-color: #294797;
-}
-
 
 body {
     transition: .5s ease-in-out;
 }
 
-/* .checkbox {
+.checkbox {
     display: none;
 }
 
@@ -59,7 +42,7 @@ body {
 
 .fa-moon {
     color: var(--dark);
-} */
+}
 
 .theme-switcher {
     width: 50px;
@@ -99,9 +82,9 @@ body {
     opacity: 0;
 }
 
-input {
+/* input {
     display: none;
-}
+} */
 
 
 input:checked+.switch {
@@ -149,6 +132,9 @@ input:checked+.switch .moon {
 }
 
 /* style de la page dark contact form */
+.dark form{
+    box-shadow: 0 3px 3px var(--color-3);
+}
 
 .dark label {
     color: var(--color-white);

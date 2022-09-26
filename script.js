@@ -85,66 +85,35 @@ window.addEventListener("load", function () {
 
 //darkmode
 
-// https://codeorum.com/tutorials/dark-mode-with-css-variables-and-vanilla-js
+const darkModeToggle = document.getElementById("dark-mode");
 
-// checkbox input value
-let themeSwitcher = document.querySelector('.theme-switcher input');
-// get current theme from localStorage
-let currentTheme = localStorage.getItem('theme');
-
-// check what is current theme right now and activate it
-if (currentTheme) {
-    document.documentElement.setAttribute('data-theme', currentTheme);
-    if (currentTheme === 'dark') {
-        themeSwitcher.checked = true;
-    }
-}
-
-// switch between themes
-function switchTheme(e) {
-    if (e.target.checked) {
-        document.documentElement.setAttribute('data-theme', 'dark');
-        localStorage.setItem('theme', 'dark');
-    }
-    else {        
-        document.documentElement.setAttribute('data-theme', 'light');
-        localStorage.setItem('theme', 'light');
-    }    
-}
-
-// event listener on checkbox change
-themeSwitcher.addEventListener('change', switchTheme, false);
-
-
-// const darkModeToggle = document.getElementById("dark-mode");
-
-// darkModeToggle.addEventListener("change", () => {
-//   document.body.classList.toggle("dark");
-// });
+darkModeToggle.addEventListener("change", () => {
+  document.body.classList.toggle("dark");
+});
 
 // //form contact
 
-// document.querySelector("button").addEventListener("click", (e) => {
-//   e.preventDefault();
-//   const contactForm = document.querySelector("#form");
-//   const name = document.querySelector('[name="name"]');
-//   const email = document.querySelector('[name="email"]');
-//   const message = document.querySelector('[name="content"]');
-//   // validation before sending the data
-//   if (
-//     name.value.length === 0 ||
-//     email.value.length === 0 ||
-//     message.value.length === 0
-//   ) {
-//     alert("merci de compléter les champs");
-//   } else {
-//     let data = new FormData(contactForm);
-//     fetch("https://formsubmit.crazysmyley@gmail.com", {
-//       method: "POST",
-//       body: data,
-//     });
-//     alert("Merci, votre message a bien été envoyé");
-//     contactForm.reset();
-//     window.open("./index.html");
-//   }
-// });
+document.querySelector("button").addEventListener("click", (e) => {
+  e.preventDefault();
+  const contactForm = document.querySelector("#form");
+  const name = document.querySelector('[name="name"]');
+  const email = document.querySelector('[name="email"]');
+  const message = document.querySelector('[name="content"]');
+  // validation before sending the data
+  if (
+    name.value.length === 0 ||
+    email.value.length === 0 ||
+    message.value.length === 0
+  ) {
+    alert("merci de compléter les champs");
+  } else {
+    let data = new FormData(contactForm);
+    fetch("https://formsubmit.crazysmyley@gmail.com", {
+      method: "POST",
+      body: data,
+    });
+    alert("Merci, votre message a bien été envoyé");
+    contactForm.reset();
+    window.open("./index.html");
+  }
+});
