@@ -114,7 +114,7 @@ document.querySelector("button").addEventListener("click", (e) => {
     });
     alert("Merci, votre message a bien été envoyé");
     contactForm.reset();
-    window.open("./index.html");
+    // window.open("./index.html");
   }
 });
 

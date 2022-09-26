@@ -534,7 +534,7 @@ footer .logo-container ul li a {
 }
 
 footer .logo-container ul li:hover {
-    transform: translate(-2px, -2px) scale(110%);
+    transform: translate(-2px, -2px) scale(1.1);
     transition: ease-in-out var(--duration1);
 }
 
