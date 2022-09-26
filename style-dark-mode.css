@@ -101,6 +101,18 @@ input:checked+.switch .moon {
 
 
 /* style de la page dark */
+/* dark header */
+.dark header {
+    background-color: var(--color-1-clr);
+    transition: background-color var(--duration1) ease-in;
+}
+
+.dark nav .logo-container {
+    background-color: var(--color-1-clr);
+    transition: background-color var(--duration1) ease-in;
+}
+
+/* dark btn top */
 
 .dark #btn_top {
     border-radius: 15px 0 15px 0;
@@ -108,7 +120,7 @@ input:checked+.switch .moon {
     background: var(--color-1-clr);
 }
 
-#btn_top:hover{
+#btn_top:hover {
     background: var(--color-1);
     border: 1px solid var(--color-white);
     background: var(--color-1);
@@ -122,6 +134,8 @@ input:checked+.switch .moon {
 .dark {
     background: var(--dark);
 }
+
+/* dark main */
 
 .dark main {
     background: var(--dark);
@@ -145,7 +159,7 @@ input:checked+.switch .moon {
 }
 
 /* style de la page dark contact form */
-.dark form{
+.dark form {
     box-shadow: 0 3px 3px var(--color-3);
 }
 
@@ -173,6 +187,13 @@ input:checked+.switch .moon {
     border: 1px solid var(--color-white);
     background: var(--color-1);
     transition: var(--duration1) ease-in-out;
+}
+
+/* dark footer */
+
+.dark footer {
+    background-color: var(--color-1-clr);
+    transition: background-color var(--duration1) ease-in;
 }
 
 /* DarkMode */

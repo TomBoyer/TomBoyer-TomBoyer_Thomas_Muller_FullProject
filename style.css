@@ -511,8 +511,9 @@ footer .footer-title {
 
 footer .footer-title h2 {
     /* font-size: 1.2rem; */
-    font-size: calc(3vmin + 10px);
+    font-size: calc(2.5vmin + 10px);
     font-family: var(--font1);
+    letter-spacing: 2px;
 }
 
 footer .logo-container {
